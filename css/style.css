@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+.btn-dark{
+    background-color: #bdb511;  
+    border: none;
+}
+/* Navbar*/
+
+.navbar{
+    background-color: black;
+}
+
+.navbar .navbar-brand{
+    color: gray;   
+}
+
+.navbar .nav-link {
+    color: gray;
+    text-transform: uppercase;
+}
+
+.navbar .nav-link:hover,
+.navbar-brand:hover{
+    color: #bdb511;
+}
+
+.nav-link i{
+    color: #bdb511;
+    font-size: 1rem;
+}
+
+/* showcase */
+
+#home h2{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #bdb511;
+    text-shadow: 1px 1px 1px rgb(156, 17, 17);  
+}
+
+#home i{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #bdb511;
+    text-shadow: 1px 1px 1px rgb(156, 17, 17);  
+}
+
+#home i:hover{
+    color: #fff307 
+ 
+}
+
+#home{
+    height: 600px;
+    width: 100%;
+    background: url(../image/showcase.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*about*/
+
+#about{
+    height: 400px;
+}
+
+/*certifications*/
+
+#certifications{
+    background-color: lightgray;
+}
+
+.badget{
+   background-color: white;
+   border-radius: 10px;
+   box-shadow:  0 3px 10px rgba(0, 0,0, 0.2);
+   padding:5px;
+   margin: 15px;
+   width: 110px;
+   display: flex;
+   justify-content: center;   
+   
+}
+
+.badget:hover{
+    box-shadow:  0 15px 15px rgba(0, 0,0, 0.2); 
+}
+
+/*blog*/
+
+#blog {
+ height: 600px;
+ padding-top: 100px;
+}
+
+.blog-height{
+ height: 400px;
+}
+
+#blog .card{
+    border-color: none;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow:  0 3px 10px rgba(0, 0,0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.card img{
+    width: 100%;
+}
+
+#blog .card:hover{
+    box-shadow:  0 15px 25px rgba(197, 34, 34, 0.2); 
+}
+
+/* CONTACT SECTION*/
+
+#contact{
+    height:600px;
+    background-color:black;
+    color: white;
+    position: relative;
+    padding: 50px;
+}
+
+.contact-form{
+    height: 300px;
+    width: 300px;
+    padding: 40px;
+    justify-self: flex-end;   
+}
+
+.contact-form .form-control{
+    margin: 15px 0;
+}
+
+.contact-form input[type='text'],
+.contact-form input[type='name'],
+.contact-form input[type='tel'],
+.contact-form input[type='email']{
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 90%;
+    padding: 3px;
+    font-size: 1rem;
+}
+
+.contact-form input:focus{
+   outline: none;
+}
+
+.my-contact h2{
+    font-size: 2.5rem;
+}
+
+.my-contact  p{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-contact  .grid{
+    grid-template-columns: 55% 45%;
+    gap: 2rem;  
+}
+
+.my-contact::before,
+.my-contact::after{
+    content: '' ;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    left: 0;
+    height: 100px;
+    background-color:white;
+    transform: skewY(-3deg);
+}
+
+.card{
+    background-color:rgb(115, 23, 23);
+    border-radius: 10px;
+    box-shadow:  0 3px 10px rgba(0, 0,0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    min-width: 400px;
+}
+
+.btn-outline{
+    background-color: transparent;
+    border: 1px solid yellow;
+    color: white;
+}
+
+.btn-outline:hover{
+    background-color: transparent;
+    border: 1px solid yellow;
+    color: red;
+}
+
+/* Lets Coonect */
+
+#linkedin{
+    height: 80px;
+    margin-top: 50px;
+}
+
+/*footer*/
+footer{
+    color: gray;
+    background-color: black;
+}
+
+footer h4:hover,
+footer p:hover{
+ color: #bdb511;
+}
+
+@media (max-width: 767px)  { 
+
+    /*blog*/
+
+    #blog {
+        height: 1250px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+       }
+    .blog-height{
+        height: 800px;
+       }
+       
+    /*about*/
+
+    #about{
+        height: 550px;
+        margin-top: 15px;
+    }
+
+    /*contact form*/
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.25rem;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact{
+        height:800px;
+        background-color:black;
+        color: white;
+        position: relative;
+        padding: 50px;
+    }
+
+    .card{
+        background-color:rgb(115, 23, 23);
+        border-radius: 10px;
+        box-shadow:  0 3px 10px rgba(0, 0,0, 0.2);
+        padding: 20px;
+        min-width: 350px;
+    }
+    
+    #contact p{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+ }
+
+
+
